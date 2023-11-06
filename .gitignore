@@ -1,0 +1,38 @@
+.vscode
+backend/SIH-ML-Venv
+
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+frontend/sanjeevani/node_modules
+frontend/sanjeevani/pnp
+frontend/sanjeevani/pnp.js
+
+# testing
+frontend/sanjeevani/coverage
+
+# next.js
+frontend/sanjeevani/next/
+frontend/sanjeevani/out/
+
+# production
+frontend/sanjeevani/build
+
+# misc
+frontend/sanjeevani/.DS_Store
+frontend/sanjeevani/*.pem
+
+# debug
+frontend/sanjeevani/npm-debug.log*
+frontend/sanjeevani/yarn-debug.log*
+frontend/sanjeevani/yarn-error.log*
+
+# local env files
+frontend/sanjeevani/.env*.local
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
