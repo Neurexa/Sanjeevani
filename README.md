@@ -14,10 +14,6 @@
 
 India is known for its vast diversity of medicinal plants, but their accurate identification is a significant challenge, leading to issues like adulteration and misidentification in the market. This project aims to address this problem by developing a software solution that can identify different medicinal plants and raw materials through image processing using various machine learning algorithms. The software will be a valuable tool for everyone involved in the supply chain of these raw materials, from wholesalers to distributors, helping ensure the authenticity and quality of medicinal products.
 
-## Demo
-
-[Insert a link or description of your project demo here if available.]
-
 ## Motivation
 
 The motivation for this project stems from the need to preserve the authenticity and quality of medicinal plants and raw materials in the Ayurvedic system. Adulteration and misidentification can lead to serious consequences for consumers and the traditional medicinal system as a whole. By using image processing and machine learning, we can create a reliable and efficient way to identify these valuable resources.
