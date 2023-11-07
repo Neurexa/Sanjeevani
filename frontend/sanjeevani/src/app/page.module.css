@@ -1,7 +1,6 @@
 .main {
     display: grid;
-    /* grid-template-columns: 33.1875rem auto; */
-    grid-template-columns: 1fr;
+    grid-template-columns: 33.1875rem auto;
     grid-template-rows: calc(100vh - 4.25rem);
     margin-top: 4.25rem;
 }

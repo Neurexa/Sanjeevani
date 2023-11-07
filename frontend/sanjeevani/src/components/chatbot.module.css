@@ -1,7 +1,7 @@
 /* --------------------------------------- Chat Section --------------------------------------- */
 
 .chatbot_frame {
-    grid-column: 1;
+    grid-column: 2;
     display: flex;
     justify-content: center;
     align-items: center;
