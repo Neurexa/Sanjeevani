@@ -25,7 +25,7 @@ SECRET_KEY = "django-insecure-gzb8qf4sr3ia@xwx&i)q1&)kd*-md(2au=f!$2zu1cpb^v%*u#
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["https://sanjeevani-frontend.vercel.app"]
+ALLOWED_HOSTS = ["*"]
 
 # CORS Settings
 CORS_ORIGIN_ALLOW_ALL = False
