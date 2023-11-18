@@ -1,0 +1,14 @@
+{
+  "builds": [
+    {
+      "src": "sanjeevani/wsgi.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "sanjeevani/wsgi.py"
+    }
+  ]
+}
