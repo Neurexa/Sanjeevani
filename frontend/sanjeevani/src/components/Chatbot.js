@@ -51,7 +51,7 @@ export default function Chatbot() {
       form_data.append(key, data[key]);
     }
 
-    const url = `${process.env.SANJEEVANI_API_URL}`;
+    const url = `${process.env.SANJEEVANI_API_URL}/chat`;
     try {
       setMsgLoading(true);
 
