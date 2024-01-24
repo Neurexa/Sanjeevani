@@ -50,8 +50,8 @@ export default function Chatbot() {
     for (var key in data) {
       form_data.append(key, data[key]);
     }
-    // const url = `https://sanjeevani-backend.vercel.app/chat`;
-    const url = `http://127.0.0.1:8000/chat`;
+
+    const url = `${process.env.SANJEEVANI_API_URL}`;
     try {
       setMsgLoading(true);
 
