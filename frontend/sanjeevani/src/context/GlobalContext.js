@@ -56,7 +56,7 @@ export function GlobalContextProvider({ children }) {
       form_data.append(key, data[key]);
     }
 
-    const url = `${process.env.SANJEEVANI_API_URL}/predict`;
+    const url = `${process.env.NEXT_PUBLIC_SANJEEVANI_API_URL}/predict`;
     try {
       setMsgLoading(true);
 

@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Message from "./Message";
 import Spinner from "./Spinner";
 import styles from "./chatbot.module.css";
@@ -51,7 +51,7 @@ export default function Chatbot() {
       form_data.append(key, data[key]);
     }
 
-    const url = `${process.env.SANJEEVANI_API_URL}/chat`;
+    const url = `${process.env.NEXT_PUBLIC_SANJEEVANI_API_URL}/chat`;
     try {
       setMsgLoading(true);
 
