@@ -14,23 +14,32 @@ def index(request):
 @csrf_exempt
 def predict(request):
     if request.method == "POST":
-        req_img = request.FILES["image"]
+        try:
+            req_img = request.FILES["image"]
 
-        # Read the image data from the request
-        image_data = req_img.read()
+            # Read the image data from the request
+            image_data = req_img.read()
 
-        # Save the image data to a BytesIO object
-        image_bytes = io.BytesIO(image_data)
+            # Save the image data to a BytesIO object
+            image_bytes = io.BytesIO(image_data)
 
-        predicted_class_label = predictpl(image_bytes)
+            predicted_class_label = predictpl(image_bytes)
 
-        return JsonResponse(
-            {
-                "status": True,
-                "response": f"This plant is {predicted_class_label}",
-                "content": "text",
-            }
-        )
+            return JsonResponse(
+                {
+                    "status": True,
+                    "response": f"This plant is {predicted_class_label}",
+                    "content": "text",
+                }
+            )
+        except Exception as e:
+            return JsonResponse(
+                {
+                    "status": False,
+                    "response": f"Something went wrong : {e}",
+                    "content": "text",
+                }
+            )
 
 
 @csrf_exempt
