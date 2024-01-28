@@ -4,8 +4,8 @@ import numpy as np
 import json
 
 def predictpl(image_bytes):
-    model = load_model("model\\model_v1.h5")
-    plant_class_labels = json.loads(open("model\\plant_class_labels.json").read())
+    model = load_model("model/model_v1.h5")
+    plant_class_labels = json.loads(open("model/plant_class_labels.json").read())
     # Preprocess the image
     img = image.load_img(image_bytes, target_size=(64, 64))
     img_array = image.img_to_array(img)

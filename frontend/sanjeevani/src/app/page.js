@@ -1,8 +1,7 @@
 "use client";
 import Aside from "@/components/Aside";
-import styles from "./page.module.css";
 import Chatbot from "@/components/Chatbot";
-import { useEffect } from "react";
+import styles from "./page.module.css";
 
 export default function Home() {
   return (
