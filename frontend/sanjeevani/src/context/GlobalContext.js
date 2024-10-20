@@ -16,6 +16,7 @@ export function GlobalContextProvider({ children }) {
       hour12: true,
     })
   );
+  const [cameraModal, setCameraModal] = useState(false);
 
   // Set References
   const chatDisplayRef = useRef(null);
@@ -41,15 +42,15 @@ export function GlobalContextProvider({ children }) {
   };
 
   // Upload Image
-  const imageUpload = async (e) => {
-    var file = e.target.files[0];
+  const imageUpload = async (file) => {
+    // var file = e.target.files[0];
     console.log("file", file);
-    const fileURL = URL.createObjectURL(e.target.files[0]);
+    const fileURL = URL.createObjectURL(file);
     setFile(fileURL);
     setMessages((prevMessages) => [...prevMessages, { imgURL: fileURL, sender: "USER", time: currentTime }]);
 
     const data = {
-      image: e.target.files[0],
+      image: file,
     };
     let form_data = new FormData();
     for (var key in data) {
@@ -108,6 +109,8 @@ export function GlobalContextProvider({ children }) {
     InputAllowed,
     setInputAllowed,
     currentTime,
+    cameraModal,
+    setCameraModal,
   };
 
   return <globalContext.Provider value={values}>{children}</globalContext.Provider>;
