@@ -11,9 +11,9 @@
   "dependencies": {
     "embla-carousel-react": "^8.3.0",
     "framer-motion": "^10.16.4",
-    "next": "latest",
-    "react": "latest",
-    "react-dom": "latest",
+    "next": "15.5.7",
+    "react": "19.1.2",
+    "react-dom": "19.1.2",
     "react-html5-camera-photo": "^1.5.11"
   }
 }
